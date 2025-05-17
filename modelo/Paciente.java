@@ -8,7 +8,7 @@ public class Paciente {
     private int idade;
     private boolean convenio;
     private int cpf;
-    private static int contador = 0;
+    
     private String prioridade;
 
     public Paciente(String nome, int idade, boolean convenio, int cpf) {
@@ -17,7 +17,7 @@ public class Paciente {
         this.convenio = convenio;
         this.cpf = cpf;
         this.prioridade = ListaDePrioridade.definindoPrioridade(idade);
-        contador++;
+        
     }
 
     public String getNome() {

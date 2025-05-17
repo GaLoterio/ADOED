@@ -32,6 +32,10 @@ public class Paciente {
         return idade;
     }
 
+    public String getPrioridade() {
+        return prioridade;
+    }
+
     public void setIdade(int idade) {
         this.idade = idade;
         this.prioridade = ListaDePrioridade.definindoPrioridade(idade);
